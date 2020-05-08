@@ -16,6 +16,7 @@ Queue.prototype.size = function() {
 
 function LinkedList() {
   this.head = null;
+  this.listSize = 0;
 }
 
 LinkedList.prototype.add = function(valor) {
@@ -30,6 +31,7 @@ LinkedList.prototype.add = function(valor) {
     }
     tailActual.next = nuevoNodo;
   }
+  this.listSize ++
 }
 
 LinkedList.prototype.remove = function() {
